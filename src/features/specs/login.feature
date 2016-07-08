@@ -1,7 +1,8 @@
+@login
 Feature: Login
   I want to login the system
 
-  @login
+ 
   Scenario Outline: Making autentication
     Given I am on HomePage
     When I fill in "<name>" in the field username

@@ -29,6 +29,9 @@ public class HomePage {
 	@FindBy(how=How.ID, using="facebook-button")
 	private WebElement facebookButton;
 
+	@FindBy(how=How.CSS, using="[ng-click='changeTab(2)']")
+	private WebElement signupButton;
+	
 	public HomePage() {
 		driver = FactoryDriver.getInstance();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -64,5 +67,10 @@ public class HomePage {
 			return null;
 		}
 		return null;
+	}
+	
+	public SignupFrame clickOnSignup(){
+		signupButton.click();
+		return new SignupFrame();
 	}
 }

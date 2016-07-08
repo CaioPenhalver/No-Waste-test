@@ -1,3 +1,10 @@
 Test of https://github.com/CaioPenhalver/No-Waste
 
-Authentication system was tested.
+Built with
+	- Maven
+	- Cucumber
+	- Selenium
+
+Tests made
+	-Authentication system
+	-User register system
